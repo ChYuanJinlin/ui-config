@@ -82,8 +82,10 @@ inquirer.prompt(promptList).then(res => {
             console.log(chalk.green('\n Generation completed!'))
             console.log('\n To get started')
             console.log(`\n cd ${projectName} \n`)
+            console.log(`npm start`)
+            console.log(`npm install`)
         }
-    )
+    )i
 
 
 })

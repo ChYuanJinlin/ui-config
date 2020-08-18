@@ -66,7 +66,7 @@ inquirer.prompt(promptList).then(res => {
         url = getKey(res.type, tplObj[templateName][0])
     }
 
-    console.log('url--',url);
+
 
     console.log(chalk.white('\n Start generating... \n'))
     // 出现加载图标
@@ -75,7 +75,7 @@ inquirer.prompt(promptList).then(res => {
     // 执行下载方法并传入参数
     download(
         url,
-        projectName,
+        program.args[1],
         err => {
             if (err) {
                 spinner.fail();
@@ -86,7 +86,7 @@ inquirer.prompt(promptList).then(res => {
             spinner.succeed();
             console.log(chalk.green('\n Generation completed!'))
             console.log('\n To get started')
-            console.log(`\n cd ${projectName} \n`)
+            console.log(`\n cd ${program.args[1]} \n`)
             console.log(`npm start`)
             console.log(`npm install`)
         }

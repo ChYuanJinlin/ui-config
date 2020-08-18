@@ -1,0 +1,15 @@
+{
+    "vue": [
+        {
+            "element-ui": "ChYuanJinlin/vue-el-template",
+            "antd": "ChYuanJinlin/vue-antd-template",
+            "vant": "ChYuanJinlin/vue-template-vant"
+        }
+    ],
+    "react": [
+        {
+            "element-ui": "ChYuanJinlin/react-el-template",
+            "antd": "ChYuanJinlin/react-antd-template"
+        }
+    ]
+}
